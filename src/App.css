@@ -1,33 +1,58 @@
-.App {
+.metronome {
   text-align: center;
+  max-width: 500px;
+  margin: auto;
+  padding: 30px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.value {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 60px;
+  margin: 2rem auto;
+  color: #34495e;
+  letter-spacing: -.07em;
+  text-shadow: white 2px 2px 2px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.bpm-slider input {
+  width: 100%;
+  margin: 2rem auto;
+  height: 5px;
+  border-radius: 5px;
+  display: block;
+  -webkit-appearance: none;
+  background-color: #bdc3c7;
+  outline: 0;
 }
 
-.App-link {
-  color: #61dafb;
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: #e74c3c;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: .3s ease-in-out;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+​ input[type="range"]::-webkit-slider-thumb:hover {
+  background-color: white;
+  border: 2px solid #e74c3c;
+}
+
+input[type="range"]::-webkit-slider-thumb:active {
+  transform: scale(1.6);
+}
+
+.metronome button {
+  background: #1ABC9C;
+  padding: 10px;
+  border: 1px solid #1ABC9C;
+  border-radius: 2px;
+  width: 100px;
+  color: #fff;
+  font-size: 18px;
 }
