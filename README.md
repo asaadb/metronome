@@ -1,6 +1,6 @@
 # Audio Metronome
 
-This is a simple metronome app built with React that shows how use setInterval  to create audio metronome.
+This is a simple metronome app built with React that shows how to use setInterval  to create audio metronome.
 
 ## Installing
 
